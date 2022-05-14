@@ -1,0 +1,16 @@
+[package]
+name = "thalo-cqrs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.137", features = ["derive"] }
+thalo = { version = "0.5.0", features = ["macros"] }
+
+[dev-dependencies]
+thalo-testing = "0.5.0"
+
+[build-dependencies]
+esdl = { version = "0.4", features = ["codegen-rust"] }
